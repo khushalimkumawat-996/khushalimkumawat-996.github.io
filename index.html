@@ -4,126 +4,138 @@
 <meta charset="UTF-8">
 <title>Khushali Kumawat | Data Analyst</title>
 
-<!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
 
 <style>
-    body {
-        margin: 0;
-        font-family: 'Inter', sans-serif;
-        background: #f1f5f9;
-        color: #1e293b;
-    }
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
 
-    header {
-        background: linear-gradient(135deg, #0f766e, #14b8a6);
-        color: white;
-        text-align: center;
-        padding: 80px 20px;
-    }
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #0f766e, #14b8a6);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
 
-    header h1 {
-        margin: 0;
-        font-size: 42px;
-        font-family: 'Poppins', sans-serif;
-        letter-spacing: 1px;
-    }
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    margin: 0;
+}
 
-    header p {
-        margin-top: 12px;
-        font-size: 18px;
-        opacity: 0.9;
-    }
+header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
 
-    .btn-main {
-        margin-top: 25px;
-        display: inline-block;
-        padding: 12px 24px;
-        background: white;
-        color: #0f766e;
-        border-radius: 30px;
-        text-decoration: none;
-        font-weight: 600;
-        transition: 0.3s;
-    }
+.btn-main {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 12px 25px;
+    background: white;
+    color: #0f766e;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
 
-    .btn-main:hover {
-        background: #0f766e;
-        color: white;
-        border: 1px solid white;
-    }
+.btn-main:hover {
+    background: #0f766e;
+    color: white;
+    border: 1px solid white;
+}
 
-    .container {
-        max-width: 1100px;
-        margin: auto;
-        padding: 40px 20px;
-    }
+/* CONTAINER */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+}
 
-    h2 {
-        font-family: 'Poppins', sans-serif;
-        color: #0f766e;
-        margin-bottom: 10px;
-    }
+h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #0f766e;
+}
 
-    section {
-        margin-bottom: 50px;
-    }
+/* PROJECTS */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
 
-    .projects {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 25px;
-    }
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
 
-    .card {
-        background: rgba(255, 255, 255, 0.8);
-        backdrop-filter: blur(10px);
-        border-radius: 15px;
-        padding: 20px;
-        box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-        transition: 0.3s;
-    }
+.card:hover {
+    transform: translateY(-8px);
+}
 
-    .card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-    }
+/* IMAGE */
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: 0.4s;
+}
 
-    .card h3 {
-        margin-top: 0;
-        font-family: 'Poppins', sans-serif;
-    }
+.card:hover img {
+    transform: scale(1.05);
+}
 
-    .btn {
-        display: inline-block;
-        margin-top: 12px;
-        padding: 8px 16px;
-        background: #0f766e;
-        color: white;
-        border-radius: 8px;
-        text-decoration: none;
-        font-size: 14px;
-        transition: 0.3s;
-    }
+/* CONTENT */
+.card-content {
+    padding: 20px;
+}
 
-    .btn:hover {
-        background: #14b8a6;
-    }
+.card h3 {
+    margin-top: 0;
+    font-family: 'Poppins', sans-serif;
+}
 
-    .skills {
-        background: white;
-        padding: 20px;
-        border-radius: 12px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        font-weight: 500;
-    }
+/* BUTTON */
+.btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 16px;
+    background: #0f766e;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
 
-    footer {
-        text-align: center;
-        padding: 20px;
-        background: #e2e8f0;
-        font-size: 14px;
-    }
+.btn:hover {
+    background: #14b8a6;
+}
+
+/* SKILLS */
+.skills {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #e2e8f0;
+    margin-top: 30px;
+}
 </style>
 </head>
 
@@ -139,54 +151,66 @@
 
 <div class="container">
 
-    <section>
-        <h2>👋 About Me</h2>
-        <p>
-            I am an aspiring data analyst passionate about transforming raw data into meaningful insights.
-            I specialize in SQL, Power BI, and data visualization to solve real-world business problems.
-        </p>
-    </section>
+<section>
+    <h2>👋 About Me</h2>
+    <p>
+        I am an aspiring data analyst passionate about transforming raw data into meaningful insights.
+        I specialize in SQL, Power BI, and data visualization to solve real-world business problems.
+    </p>
+</section>
 
-    <section>
-        <h2>📊 Projects</h2>
+<section>
+    <h2>📊 Projects</h2>
 
-        <div class="projects">
+    <div class="projects">
 
-            <div class="card">
-                <h3>E-commerce Sales Dashboard</h3>
-                <p>Analyzed revenue trends, customer behavior, and product performance using Power BI.</p>
+        <!-- ECOMMERCE -->
+        <div class="card">
+            <img src="ecommerce.png" alt="Ecommerce Dashboard">
+            <div class="card-content">
+                <h3>E-commerce Intelligence Dashboard</h3>
+                <p>Advanced dashboard analyzing revenue, customers, and product performance.</p>
                 <a class="btn" href="https://github.com/khushalimkumawat-996" target="_blank">View Project</a>
             </div>
+        </div>
 
-            <div class="card">
-                <h3>Retail Sales Dashboard</h3>
-                <p>Interactive dashboard analyzing revenue, orders & customer behavior.</p>
+        <!-- RETAIL -->
+        <div class="card">
+            <img src="retail.png" alt="Retail Dashboard">
+            <div class="card-content">
+                <h3>Retail Sales Performance Dashboard</h3>
+                <p>Analyzed sales trends, monthly performance, and order behavior.</p>
                 <a class="btn" href="https://github.com/khushalimkumawat-996/Retail-Sales-Dashboard-PowerBI" target="_blank">View Project</a>
             </div>
+        </div>
 
-            <div class="card">
-                <h3>Customer Insights Analysis</h3>
-                <p>Statistical analysis project to uncover patterns and trends in data.</p>
+        <!-- CUSTOMER -->
+        <div class="card">
+            <img src="customer.png" alt="Customer Insights">
+            <div class="card-content">
+                <h3>Customer Insights Dashboard</h3>
+                <p>Statistical analysis of customer behavior, demographics, and spending patterns.</p>
                 <a class="btn" href="https://github.com/khushalimkumawat-996/Data-Analytics-Project-Customer-Insights-using-Statistical-Analysis-Dashboarding" target="_blank">View Project</a>
             </div>
-
         </div>
-    </section>
 
-    <section>
-        <h2>🛠 Skills</h2>
-        <div class="skills">
-            SQL | Power BI | Data Analysis | Data Visualization | Statistics
-        </div>
-    </section>
+    </div>
+</section>
 
-    <section>
-        <h2>📬 Contact</h2>
-        <p>
-            🔗 <a class="btn" href="https://www.linkedin.com/in/khushali-kumawat" target="_blank">LinkedIn</a>
-            💻 <a class="btn" href="https://github.com/khushalimkumawat-996" target="_blank">GitHub</a>
-        </p>
-    </section>
+<section>
+    <h2>🛠 Skills</h2>
+    <div class="skills">
+        SQL | Power BI | Data Analysis | Data Visualization | Statistics
+    </div>
+</section>
+
+<section>
+    <h2>📬 Contact</h2>
+    <p>
+        🔗 <a class="btn" href="https://www.linkedin.com/in/khushali-kumawat" target="_blank">LinkedIn</a>
+        💻 <a class="btn" href="https://github.com/khushalimkumawat-996" target="_blank">GitHub</a>
+    </p>
+</section>
 
 </div>
 
